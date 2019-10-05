@@ -1,10 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="utf-8">
 <head>
     <meta charset="UTF-8">
     <title>div使用</title>
+    <!--类对应的布局-->
+    <style>
+        .cities{
+            background-color: black;
+            color: white;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+    <!--第二种布局-->
+    <style>
+        #header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        #nav{
+            line-height: 30px;
+            background-color: #eeeeee;
+            height:300px;
+            width: 300px;
+            float: left;
+            padding: 5px;
+        }
+        #section{
+            width: 350px;
+            float: left;
+            padding: 10px;
+        }
+        #footer{
+            background-color: black;
+            color: white;
+            clear: both;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+    <!--使用html5布局-->
+    <style>
+        header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        nav{
+            line-height: 30px;
+            background-color: #eeeeee;
+            height:300px;
+            width: 300px;
+            float: left;
+            padding: 5px;
+        }
+        section{
+            width: 350px;
+            float: left;
+            padding: 10px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            clear: both;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
+<div class="cities">
+    <h2>London Bridge Is Falling Down</h2>
+    <p>London bridge is falling down.</p>
+    <p>falling down, falling down.</p>
+</div>
+<div class="cities">
+    <p>Build it up with iron bars,</p>
+    <p>iron bars, iron bars.</p>
+</div>
 
+<!--另一种div 使用div布局-->
+<div>
+    <div id="header">
+        <h1>London bridge is falling down.</h1>
+    </div>
+    <div id="nav">
+        <p>
+            London bridge is falling down,<br />
+            伦敦桥要塌下来，<br />
+            falling down, falling down.<br />
+            塌下来，塌下来。
+        </p>
+    </div>
+    <div id="section">
+        <p>
+            London bridge is falling down,<br />
+            伦敦桥要塌下来，<br />
+            my fair lady .<br />
+            我美丽的淑女。
+        </p>
+    </div>
+    <div id="footer">
+        The end.
+    </div>
+</div>
+<hr color="green"/><hr color="blue" /><hr color="red"/>
+<!--使用html5进行布局-->
+<div>
+    <header><h1>London Bridge is falling down.</h1></header>
+    <nav>
+        London Bridge is falling down,<br />
+        falling down
+    </nav>
+    <section>
+        London Bridge is falling down,<br />
+        My fair Laddy.
+    </section>
+    <footer>The end.</footer>
+</div>
 </body>
 </html>
