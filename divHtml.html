@@ -70,6 +70,20 @@
             padding: 5px;
         }
     </style>
+    <!--使用表格布局-->
+    <style>
+        table.lamp{
+            width:100%;
+            border:1px solid #d4d4d4;
+        }
+        table.lamp th,td{
+            padding:10px;
+        }
+        table.lamp th{
+            width:200px;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
 <div class="cities">
@@ -121,5 +135,18 @@
     </section>
     <footer>The end.</footer>
 </div>
+<hr color="green"/><hr color="blue" /><hr color="red"/>
+<!--使用表格布局-->
+<table class="lamp">
+    <tr>
+        <th>
+            <img src="http://hbimg.b0.upaiyun.com/48af1a9b3637911c4f5316110ad2c93686fcdcf5500b7-ASvjR3_fw658"
+                alt="Note" style="height: 100px;width: 100px;"/>
+        </th>
+        <td>
+            The table element was not designed to be a layout tool.
+        </td>
+    </tr>
+</table>
 </body>
 </html>
