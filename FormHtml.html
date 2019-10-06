@@ -5,6 +5,75 @@
     <title>FormHtml</title>
 </head>
 <body>
+<!---->
+
+
+    <form action="index.html" method="post">
+
+        <br />
+
+        <br />
+            <!--select 下拉列表-->
+        <select>
+            <option value="One">One</option>
+            <option value="Two" selected>Two</option>
+            <option value="three">three</option>
+        </select>
+        <hr />
+        <!--文本输入域-->
+        <textarea name="message" rows="10" cols="20">请在该区域输入：</textarea>
+        <hr />
+        <!--提交按钮-->
+
+        <hr />
+        <button type="button" onclick="alert('Hello')">Check</button>
+        <!--组合表单数据-->
+        <fieldset>
+            <legend>Personal:</legend>
+            <input type="text" name="firstName" value="请输入用户名"/>
+            <br />
+            Password:<br />
+            <input type="password" name="lastName" value="请输入密码"/>
+            <br />
+        </fieldset>
+
+
+    </form>
+<hr color="red" />
+<form>
+    <p>input 的 type 标签</p>
+    <input list="someS" name="hello"/>
+    <details id="someS">
+        <option value="wang" />
+        <option value="dong" />
+        <option value="sunny" />
+        <option value="hello" />
+    </details>
+    <br />
+    <input type="submit">
+    <br />
+    <input type="submit" value="提交"/>
+    <br />
+    用 户 名:<br />
+    <input type="text" name="firstName" value="请输入用户名"/>
+    <br />
+    Password:<br />
+    <input type="password" name="lastName" value="请输入密码"/>
+    <br />
+    性别：<br />
+    <div style="padding: 10px; border:1px solid black; width: 150px;height: auto;">
+        <input type="radio" name="sex"  value="male" />Man
+        <input type="radio" name="sex"  value="female" />Woman
+    </div>
+    <br />
+    <input type="color" value="颜色"/>
+    <br>
+    <input type="checkbox" name="checkS" value="car" />
+    car<br>
+    <input type="checkbox" name="checkS" value="bike"/>
+    bike<br>
+    <br />
+</form>
 
 </body>
 </html>
